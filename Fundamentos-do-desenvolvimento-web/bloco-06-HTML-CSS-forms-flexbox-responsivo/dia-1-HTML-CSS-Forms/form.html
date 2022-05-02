@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <!-- O formulário deverá permitir que o usuário insira os seguintes campos: -->
+            <!-- Nome Completo: -->
+            <!-- Limitado entre 10 e 40 caracteres. -->
+            <label for="nomeCompleto">Nome
+                <input type="text" name="nome" placeholder="Digite seu nome completo" minlength="10" maxlength="40"
+                    id="nomeCompleto" required>
+            </label>
+            <br>
+            <!-- E-mail: -->
+            <!-- Limitado entre 10 e 50 caracteres. -->
+
+            <label for="email">E-mail
+                <input type="email" name="E-mail" placeholder="Digite seu E-mail" minlength="10" maxlength="50"
+                    id="email" required>
+            </label>
+            <br>
+
+            <!-- Destino Preferido: -->
+            <!-- 4 opções: Cidade, Campo, Praia, Montanhas. -->
+
+            <label for="destino">Destino Preferido
+                <select nome="destido preferido" id="destino" required>
+                    <option value="Cidade">Cidade</option>
+                    <option value="Campo">Campo</option>
+                    <option value="Praia" selected>Praia</option>
+                    <option value="Montanhas">Montanhas</option>
+                </select>
+            </label>
+            <br>
+            <!-- Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? -->
+            <!-- Limite de 500 caracteres. -->
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <textarea name="justificativa" id="text-area" cols="30" rows="10" maxlength="500" required></textarea>
+            <br>
+
+            <!-- Qual a melhor data para realizar sua viagem? -->
+            <label for="data">Data
+                <input type="date" name="data" placeholder="dd/mm/aaaa" id="data" required>
+            </label>
+            <br>
+            <!-- Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? -->
+            <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+            <label for="check1">Concordo
+                <input type="radio" name="radio1" value="Sim" required>
+            </label>
+            <!-- Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. -->
+            <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+            <label for="check2">Concordo
+                <input type="radio" name="radio2" value="Sim" required>
+            </label>
+            <!-- Esses serão os principais campos utilizadas nos próximos exercícios. -->
+        </fieldset>
+        <!-- Crie um botão para enviar as informações preenchidas. -->
+        <button type="submit" id="preventDefault">Enviar</button>
+        <!-- Crie um botão que limpe as informações contidas nos campos; -->
+        <button type="reset">Limpar</button>
+
+    </form>
+    <!-- Agora vamos utilizar um pouco de javascript, para isso crie o arquivo script.js e o referencie no HTML. -->
+<!-- Dica: Coloque a tag <script> no final do seu body. -->
+
+<script src="script.js"></script>
+</body>
+
+</html>
